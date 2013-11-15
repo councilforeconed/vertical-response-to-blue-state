@@ -8,7 +8,7 @@ Dir.glob('./vertical-response/*.csv').each do |file|
   output_file = File.new("./blue-state/#{file[20,file.length - 4]}-#{Time.new.strftime('%F-%3N%S')}.csv", 'w')
   output = CSV.new(output_file)
   output << HEADERS
-  CSV.read(file, headers: :first_row).each do |row|
+  CSV.read(file, :headers => :first_row).each do |row|
     output << VerticalResponse.new(row).to_row
   end
 end
