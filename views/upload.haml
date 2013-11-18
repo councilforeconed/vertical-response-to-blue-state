@@ -1,0 +1,13 @@
+%html
+  %head
+    %link(href='//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css' rel='stylesheet')
+  %body
+    .container
+      .row
+        .col-md-12
+          %h1 File Upload
+          %p.lead Vertical Response to Blue State Digital Converter
+          %form(method="post" enctype='multipart/form-data' role='form')   
+            .form-group
+              %input.well.col-md-12(type='file' name='file') 
+            %input.btn.btn-primary.btn-lg.btn-block(type='submit' value='Upload')
