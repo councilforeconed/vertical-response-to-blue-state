@@ -51,7 +51,7 @@ class VerticalResponse
   end
   
   def to_s
-    to_row.join(',')
+    to_row.map{ |field| '"' + field + '"' unless field.nil? }.join(',')
   end
   
   def determine_grade(row)
