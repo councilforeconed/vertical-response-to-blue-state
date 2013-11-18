@@ -5,6 +5,7 @@ require 'sinatra'
 require 'haml'
 require './lib/vertical-response'
 require './lib/blue-state-headers'
+require '.lib/output-formatter'
 
 encoding_options = {
       :invalid => :replace,
