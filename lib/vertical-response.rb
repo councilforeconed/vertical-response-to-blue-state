@@ -13,7 +13,7 @@ class VerticalResponse
     @city = row[8]
     @state = row[9]
     @postal_code = row[10]
-    @country = row[11]
+    @country = determine_country(row)
     @phone = row[12]
     @school = row[5]
     @job_title = row[4]
@@ -65,6 +65,14 @@ class VerticalResponse
   
   def determine_school(row)
     return ""
+  end
+  
+  def determine_country(row)
+    if row[11] == "US United States"
+      return "US"
+    else
+      return row[11]
+    end
   end
   
   def determine_job_function(row)
