@@ -6,4 +6,4 @@ This is a quick and dirty little Ruby script to convert the exported data from V
 
     ruby app.rb
     
-This will take everything from the `vertical-response` folder, do some black magic, and pop it into the `blue-state` folder with a time stamp.
+This will start up a little web server where you can upload your files.
