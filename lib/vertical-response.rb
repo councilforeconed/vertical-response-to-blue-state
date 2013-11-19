@@ -56,10 +56,10 @@ class VerticalResponse
   
   def determine_grade(row)
     grades = []
-    grades << "9-12" if row[27] == 'yes'
-    grades << "6-8" if row[21] == 'yes'
-    grades << "3-5" if row[22] == 'yes'
-    grades << "K-2" if row[24] == 'yes'
+    grades << "9 to 12" if row[27] == 'yes'
+    grades << "6 to 8" if row[21] == 'yes'
+    grades << "3 to 5" if row[22] == 'yes'
+    grades << "K to 2" if row[24] == 'yes'
     return grades.first if grades.length > 0
   end
   
